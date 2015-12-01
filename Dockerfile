@@ -26,6 +26,6 @@ RUN wget http://10.225.117.109:8082/cvbb-1.0-installer-2015-11-26.tgz
 RUN tar zxvf cvbb-1.0-installer-2015-11-26.tgz
 RUN pwd
 RUN cd cvbb-1.0-installer && ./install
-WORKDIR /app
+WORKDIR /
 RUN [".shipped/build"]
 CMD .shipped/run
