@@ -1,6 +1,3 @@
 #!/bin/bash
 
-python /usr/sbin/servicize --config=/etc/cvbb-license-loggerd/cvbb-license-loggerd.json -- cvbb-license-logger --name=cvbb-license-logger /var/run/cvbn-muxd/south /var/lib/db/cvbb-license-loggerd/xmpp-accounts
-
-python /usr/sbin/servicize --config=/etc/cvbb-xmpp-gatewayd/cvbb-xmpp-gatewayd.json -- cvbb-xmpp-gateway --name=cvbb-xmpp-gateway /var/run/cvbn-muxd/south /var/lib/db/cvbb-xmpp-gatewayd/xmpp-accounts
-
+/bin/bash
