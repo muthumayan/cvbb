@@ -7,7 +7,7 @@ COPY . /
 #RUN cd bash-4.1 && ./configure && make && make install
 RUN apt-get update && apt-get -q -y install sudo wget unzip aptitude curl 
 RUN mkdir -p /opt
-RUN cd /opt && curl -o jdk-7u79-linux-x64.tar.gz http://wwwin-people.cisco.com/muthu/jdk-7u79-linux-x64.tar.gz
+RUN cd /opt && wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/7u79-b15/jdk-7u79-linux-x64.tar.gz"
 RUN cd /opt && tar xvfz jdk-7u79-linux-x64.tar.gz
 RUN update-alternatives --install "/usr/bin/java" "java" "/opt/jdk1.7.0_79/bin/java" 1
 RUN update-alternatives --set java /opt/jdk1.7.0_79/bin/java
