@@ -18,9 +18,9 @@ RUN apt-get install -q -y dsc20=2.0.12-1 cassandra=2.0.12
 RUN mkdir -p /opt/cisco && cd /opt/cisco
 WORKDIR /opt/cisco
 RUN pwd
-RUN curl -o wso2esb-4.8.1.zip http://10.225.117.109:8083/wso2esb-4.8.1.zip
+RUN wget https://dl.bintray.com/muthumayan/test/flatdir/wso2esb-4.8.1.zip
 RUN unzip wso2esb-4.8.1.zip
-RUN curl -o cvbb-1.0-installer-2015-11-26.tgz http://10.225.117.109:8082/cvbb-1.0-installer-2015-11-26.tgz
+RUN wget https://dl.bintray.com/muthumayan/test/flatdir/cvbb-1.0-installer-2015-11-26.tgz
 RUN tar zxvf cvbb-1.0-installer-2015-11-26.tgz
 RUN pwd
 RUN cd cvbb-1.0-installer && ./install
