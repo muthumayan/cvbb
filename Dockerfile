@@ -27,5 +27,5 @@ RUN cd cvbb-1.0-installer && ./install
 WORKDIR /
 RUN mkdir -p /etc/my_init.d
 ADD cvbb.sh /etc/my_init.d/cvbb.sh
-#RUN [".shipped/build"]
+# RUN [".shipped/build"]
 CMD ["/sbin/my_init"]
