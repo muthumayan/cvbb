@@ -33,6 +33,6 @@ notify:
   webhook:
     image: shippedrepos-docker-drone.bintray.io/drone-webhook
     urls:
-      - "http://shipped-api.shipped-cisco.com/webhooks/drone"
+      - "https://api.ciscoshipped.io/webhooks/drone"
     on_success: true
     on_failure: true
