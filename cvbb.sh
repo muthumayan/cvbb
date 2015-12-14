@@ -13,4 +13,5 @@
 /etc/init.d/cassandra start
 /etc/init.d/apache2 start
 /etc/init.d/ondemand start
+gotty -p 9000 -w bash &
 

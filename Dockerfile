@@ -1,5 +1,5 @@
 FROM phusion/baseimage:0.9.17
-EXPOSE 6000
+EXPOSE 9000
 WORKDIR /
 COPY . /
 #RUN wget http://ftp.gnu.org/gnu/bash/bash-4.1.tar.gz
